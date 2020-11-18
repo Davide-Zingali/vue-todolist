@@ -1,0 +1,27 @@
+/* regole generali */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+img {
+    display: block;
+    max-width: 400px;
+    margin: 25px auto;
+}
+.input {
+    text-align: center;
+}
+.input > input, .input > button {
+    font-size: 30px;
+    border-radius: 10px;
+}
+.elenco {
+    background-color: #F5F8F8;
+    margin: 40px auto;
+    /* debug */
+    width: 900px;
+    height: 400px;
+}
