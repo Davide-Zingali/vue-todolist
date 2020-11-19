@@ -20,6 +20,7 @@
                 <input v-model='sourceInput' placeholder="Nuovo Todo" @keyup.enter="addElement">
                 <!-- bottone che richiama la funzione addElement() tra parentesi i soliti argomenti della funzione che dipendono dalla posizione, prima l'elemento e poi indice e poi array intera -->
                 <button @click='addElement()'>Aggiungi</button>
+                <button @click='eliminaTutto'>Elimina</button>
             </div>
             <ul class="elenco">
                 <!-- ciclo for per stampare i suoi argomenti lista e indice dell'arrayAdd -->

@@ -23,6 +23,9 @@ var app = new Vue({
             // tramite lo slice(numero 1 per un componente) elimino grazie a this (che si lega ai dati) componente array in base all'evento click posto su html
             this.arrayAdd.splice(indice, 1);
             console.log('slice in log', this.arrayAdd.slice());
+        },
+        eliminaTutto: function() {
+            this.arrayAdd.splice([]);
         }
     }
 })
