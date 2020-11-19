@@ -8,7 +8,22 @@
 var app = new Vue({
     el: '#root',
     data: {
-        sourceInput: 'test'
+        // sourceInput rappresenta il contenuto di value (ovvero che che verra' visualizzato all'interno del tag input su pagina web), che puo' essere sia mandato a schermo che usato come input per compilare l'array sotto
+        sourceInput: '',
+        // array che compilo tramite il dato sopra e grazie all'evento click legato al button posto su html
+        arrayAdd: ['Appuntamento di lavoro ore 15']
+    },
+    methods: {
+        addElement: function () {
+            // tramite push di js aggiungo grazie a this (che si lega ai dati) componente array (sourceInput) in base all'evento click posto su html
+            this.arrayAdd.push(this.sourceInput),
+            console.log('mostro array' + this.arrayAdd)
+        },
+        deleteElement: function (indice) {
+            // tramite lo slice(numero 1 per un componente) elimino grazie a this (che si lega ai dati) componente array in base all'evento click posto su html
+            this.arrayAdd.splice(indice, 1);
+            console.log('slice in log', this.arrayAdd.slice());
+        }
     }
 })
 
